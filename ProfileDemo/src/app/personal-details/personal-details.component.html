@@ -1,0 +1,25 @@
+
+Name     : <input type=text #name /> <br/>
+City     :<input type=text #city /> <br/>
+MobileNo :<input type=text #mobileNo /> <br/>
+Age      :<input type=text #age /> <br/>
+<button (click)="addNewPerson(name.value,city.value,mobileNo.value,age.value)">Add Person</button>
+
+<table *ngFor="let person of personList">
+  <tr>
+      <td>Name:</td>
+      <td>{{person.name}}</td>
+  </tr>
+  <tr>
+      <td>City:</td>
+      <td>{{person.city}}</td>
+  </tr>
+    <tr>
+      <td>MobileNo:</td>
+      <td>{{person.mobileNo}}</td>
+  </tr>
+    <tr>
+      <td>Age:</td>
+      <td>{{person.age}}</td>
+  </tr>
+</table>

@@ -1,0 +1,8 @@
+Enter No1 : <input type=text #num1 /> <br/>
+Enter No2 : <input type=text #num2 /> <br/>
+<button [disabled]="result <= 0" (click)="add(num1.value,num2.value)">+</button>
+<button (click)="sub(num1.value,num2.value)">-</button>
+<button (click)="mul(num1.value,num2.value)">*</button>
+<button (click)="div(num1.value,num2.value)">/</button>
+<br/>
+Result Is: {{result}}
